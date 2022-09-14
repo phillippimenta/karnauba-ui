@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"); /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.bg-light {
+  background-color: #f3f3f3;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.text-primary {
+  color: #7bc947;
+}
+
+.text-secondary {
+  color: #91ed53;
+}
+
+.text-info {
+  color: #73caf7;
+}
+
+.text-success {
+  color: #31d272;
+}
+
+.text-warning {
+  color: #fda506;
+}
+
+.text-danger {
+  color: #f98a89;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+h5 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 0 0%;
+  padding: 0.35rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.one {
+  flex: 0 0 auto;
+  width: calc(1 / 12 * 100%);
+}
+
+.two {
+  flex: 0 0 auto;
+  width: calc(2 / 12 * 100%);
+}
+
+.three {
+  flex: 0 0 auto;
+  width: calc(3 / 12 * 100%);
+}
+
+.four {
+  flex: 0 0 auto;
+  width: calc(4 / 12 * 100%);
+}
+
+.five {
+  flex: 0 0 auto;
+  width: calc(5 / 12 * 100%);
+}
+
+.six {
+  flex: 0 0 auto;
+  width: calc(6 / 12 * 100%);
+}
+
+.seven {
+  flex: 0 0 auto;
+  width: calc(7 / 12 * 100%);
+}
+
+.eight {
+  flex: 0 0 auto;
+  width: calc(8 / 12 * 100%);
+}
+
+.nine {
+  flex: 0 0 auto;
+  width: calc(9 / 12 * 100%);
+}
+
+.ten {
+  flex: 0 0 auto;
+  width: calc(10 / 12 * 100%);
+}
+
+.eleven {
+  flex: 0 0 auto;
+  width: calc(11 / 12 * 100%);
+}
+
+.twelve {
+  flex: 0 0 auto;
+  width: calc(12 / 12 * 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+  .column {
+    width: 100% !important;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: #333;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+td,
+th {
+  padding: 6px;
+  border: 1px solid #ccc;
+}
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
+	*/
+@media only screen and (max-width: 768px), (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+  }
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin: 0 0 1rem 0;
+  }
+  tr:nth-child(odd) {
+    background: #ccc;
+  }
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 0%;
+    word-break: break-word;
+  }
+  td:before {
+    float: left;
+    margin-right: 1rem;
+    font-weight: 500;
+  }
+  td:nth-of-type(1):before {
+    content: "First Name";
+  }
+  td:nth-of-type(2):before {
+    content: "Last Name";
+  }
+  td:nth-of-type(3):before {
+    content: "Job Title";
+  }
+  td:nth-of-type(4):before {
+    content: "Favorite Color";
+  }
+  td:nth-of-type(5):before {
+    content: "Wars of Trek?";
+  }
+  td:nth-of-type(6):before {
+    content: "Secret Alias";
+  }
+  td:nth-of-type(7):before {
+    content: "Date of Birth";
+  }
+  td:nth-of-type(8):before {
+    content: "Dream Vacation City";
+  }
+  td:nth-of-type(9):before {
+    content: "GPA";
+  }
+  td:nth-of-type(10):before {
+    content: "Arbitrary Data";
+  }
+}
+.alert {
+  position: relative;
+  padding: 0 0.75rem;
+  color: inherit;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.alert__icon {
+  margin-right: 0.5rem;
+}
+
+.alert__close-button {
+  margin-left: auto;
+  margin-right: -0.75rem;
+  border: transparent;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.alert--info {
+  background-color: #d6f0ff;
+  color: #141414;
+  border-left: 0.5rem solid #73caf7;
+}
+.alert--info .alert__close-button {
+  background-color: #99d9ff;
+}
+
+.alert--success {
+  background-color: #c2f3d6;
+  color: #141414;
+  border-left: 0.5rem solid #31d272;
+}
+.alert--success .alert__close-button {
+  background-color: #96eab8;
+}
+
+.alert--warning {
+  background-color: #fedb9b;
+  color: #141414;
+  border-left: 0.5rem solid #fda506;
+}
+.alert--warning .alert__close-button {
+  background-color: #ffd080;
+}
+
+.alert--danger {
+  background-color: #fff5f5;
+  color: #141414;
+  border-left: 0.5rem solid #f98a89;
+}
+.alert--danger .alert__close-button {
+  background-color: #ff99a4;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f7;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0.5rem 1rem;
+}
+
+.button {
+  background-color: #e7e7e7;
+  color: #141414;
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-width: 7.5rem;
+  margin: 0.25rem 0.125rem;
+}
+
+.button--primary {
+  background-color: #7bc947;
+  color: #141414;
+}
+
+.button--secondary {
+  background-color: #91ed53;
+  color: #141414;
+}
+
+.button--success {
+  background-color: #31d272;
+  color: #141414;
+}
+
+.button--danger {
+  background-color: #f98a89;
+  color: #141414;
+}
+
+.button--warning {
+  background-color: #fda506;
+  color: #141414;
+}
+
+.button--info {
+  background-color: #73caf7;
+  color: #141414;
+}
+
+.button--info {
+  background-color: #73caf7;
+  color: #141414;
+}
+
+.button--ligth {
+  color: #141414;
+}
+
+.button--dark {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  border: unset;
+  background-color: unset;
+  box-sizing: border-box;
+  outline: 0;
+  appearance: none;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=framework-ui.css.map */

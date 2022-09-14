@@ -1,0 +1,34 @@
+@use "sass:map";
+@import "./variables.scss";
+
+.bg-light {
+  background-color: #f3f3f3;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.text-primary {
+  color: map.get($theme-colors, "color-primary");
+}
+
+.text-secondary {
+  color: map.get($theme-colors, "color-secondary");
+}
+
+.text-info {
+  color: map.get($theme-colors, "color-info");
+}
+
+.text-success {
+  color: map.get($theme-colors, "color-success");
+}
+
+.text-warning {
+  color: map.get($theme-colors, "color-warning");
+}
+
+.text-danger {
+  color: map.get($theme-colors, "color-danger");
+}

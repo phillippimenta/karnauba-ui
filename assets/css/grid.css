@@ -1,0 +1,90 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 992px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 0 0%;
+  padding: 0.35rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.one {
+  flex: 0 0 auto;
+  width: calc(1 / 12 * 100%);
+}
+
+.two {
+  flex: 0 0 auto;
+  width: calc(2 / 12 * 100%);
+}
+
+.three {
+  flex: 0 0 auto;
+  width: calc(3 / 12 * 100%);
+}
+
+.four {
+  flex: 0 0 auto;
+  width: calc(4 / 12 * 100%);
+}
+
+.five {
+  flex: 0 0 auto;
+  width: calc(5 / 12 * 100%);
+}
+
+.six {
+  flex: 0 0 auto;
+  width: calc(6 / 12 * 100%);
+}
+
+.seven {
+  flex: 0 0 auto;
+  width: calc(7 / 12 * 100%);
+}
+
+.eight {
+  flex: 0 0 auto;
+  width: calc(8 / 12 * 100%);
+}
+
+.nine {
+  flex: 0 0 auto;
+  width: calc(9 / 12 * 100%);
+}
+
+.ten {
+  flex: 0 0 auto;
+  width: calc(10 / 12 * 100%);
+}
+
+.eleven {
+  flex: 0 0 auto;
+  width: calc(11 / 12 * 100%);
+}
+
+.twelve {
+  flex: 0 0 auto;
+  width: calc(12 / 12 * 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+  .column {
+    width: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=grid.css.map */

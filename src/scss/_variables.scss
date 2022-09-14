@@ -1,0 +1,46 @@
+$extra-small: 595px;
+$small: 600px;
+$medium: 768px;
+$large: 889px;
+$extra-large: 1200px;
+
+$theme-colors: (
+  "color-primary": #7bc947,
+
+  "color-secondary": #91ed53,
+
+  "color-info": #73caf7,
+  "color-secondary-info": #99d9ff,
+  "color-light-info": #d6f0ff,
+
+  "color-success": #31d272,
+  "color-secondary-success": #96eab8,
+  "color-light-success": #c2f3d6,
+
+  "color-warning": #fda506,
+  "color-secondary-warning": #ffd080,
+  "color-light-warning": #fedb9b,
+
+  "color-danger": #f98a89,
+  "color-secondary-danger": #ff99a4,
+  "color-light-danger": #fff5f5,
+
+  "color-light": #f4f4f4,
+
+  "color-dark": #353535,
+);
+
+// For extremely small screen devices (595px and below)
+// @media only screen and (max-width: 595px) {...}
+
+// Small screen devices (600px and above)
+// @media only screen and (min-width: 600px) {...}
+
+// Medium screen devices (768px and above)
+// @media only screen and (min-width: 768px) {...}
+
+// Big screen devices (889px and above)
+// @media only screen and (min-width: 889px) {...}
+
+// Extra big screen devices (1200px and above)
+// @media only screen and (min-width: 1200px) {...}

@@ -1,0 +1,24 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f7f7f7;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.card__body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0.5rem 1rem;
+}
+
+/*# sourceMappingURL=card.css.map */

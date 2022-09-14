@@ -1,0 +1,62 @@
+.alert {
+  position: relative;
+  padding: 0 0.75rem;
+  color: inherit;
+  background-color: transparent;
+  border: transparent;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.alert__icon {
+  margin-right: 0.5rem;
+}
+
+.alert__close-button {
+  margin-left: auto;
+  margin-right: -0.75rem;
+  border: transparent;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.alert--info {
+  background-color: #d6f0ff;
+  color: #141414;
+  border-left: 0.5rem solid #73caf7;
+}
+.alert--info .alert__close-button {
+  background-color: #99d9ff;
+}
+
+.alert--success {
+  background-color: #c2f3d6;
+  color: #141414;
+  border-left: 0.5rem solid #31d272;
+}
+.alert--success .alert__close-button {
+  background-color: #96eab8;
+}
+
+.alert--warning {
+  background-color: #fedb9b;
+  color: #141414;
+  border-left: 0.5rem solid #fda506;
+}
+.alert--warning .alert__close-button {
+  background-color: #ffd080;
+}
+
+.alert--danger {
+  background-color: #fff5f5;
+  color: #141414;
+  border-left: 0.5rem solid #f98a89;
+}
+.alert--danger .alert__close-button {
+  background-color: #ff99a4;
+}
+
+/*# sourceMappingURL=alerts.css.map */

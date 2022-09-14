@@ -1,0 +1,33 @@
+.bg-light {
+  background-color: #f3f3f3;
+}
+
+.p-3 {
+  padding: 1rem !important;
+}
+
+.text-primary {
+  color: #7bc947;
+}
+
+.text-secondary {
+  color: #91ed53;
+}
+
+.text-info {
+  color: #73caf7;
+}
+
+.text-success {
+  color: #31d272;
+}
+
+.text-warning {
+  color: #fda506;
+}
+
+.text-danger {
+  color: #f98a89;
+}
+
+/*# sourceMappingURL=utilities.css.map */

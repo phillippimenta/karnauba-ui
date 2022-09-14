@@ -1,0 +1,44 @@
+$container-max-width: 992px;
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1 0 0%;
+  padding: 0.35rem 0.5rem;
+  box-sizing: border-box;
+}
+
+$numbers: "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+  "ten", "eleven", "twelve";
+
+$i: 1;
+
+@each $number in $numbers {
+  .#{$number} {
+    flex: 0 0 auto;
+    width: calc(#{$i} / 12 * 100%);
+  }
+  $i: $i + 1;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    display: block;
+  }
+
+  .column {
+    width: 100% !important;
+  }
+}
